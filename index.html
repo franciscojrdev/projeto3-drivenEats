@@ -58,24 +58,24 @@
                     <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
                 <div class="card2" onclick="drink(this);">
-                    <img src="img/coquinha_gelada 1.png" alt="">
-                    <h3>Coquinha gelada</h3>
+                    <img src="img/fanta.jpeg" alt="">
+                    <h3>Fanta</h3>
                     <h4>Lata 350ml</h4>
-                    <span>R$ 4,90</span>
+                    <span>R$ 3,90</span>
                     <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
                 <div class="card2" onclick="drink(this);">
-                    <img src="img/coquinha_gelada 1.png" alt="">
-                    <h3>Coquinha gelada</h3>
-                    <h4>Lata 350ml</h4>
-                    <span>R$ 4,90</span>
+                    <img src="img/cafe.jpeg" alt="">
+                    <h3>Café do Bom</h3>
+                    <h4>Sem açucar e Amargo</h4>
+                    <span>R$ 2,50</span>
                     <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
                 <div class="card2" onclick="drink(this);">
-                    <img src="img/coquinha_gelada 1.png" alt="">
-                    <h3>Coquinha gelada</h3>
+                    <img src="img/guarana_jesus.jpeg" alt="">
+                    <h3>Guaraná Jesus</h3>
                     <h4>Lata 350ml</h4>
-                    <span>R$ 4,90</span>
+                    <span>R$ 6,75</span>
                     <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
             </div>
@@ -89,97 +89,34 @@
                     <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
                 <div class="card3" onclick="dessert(this);">
-                    <img src="img/pudim 1.png" alt="">
-                    <h3>Pudim</h3>
-                    <h4>Apenas pudim</h4>
-                    <span>R$ 5,90</span>
+                    <img src="img/pave.jpeg" alt="">
+                    <h3>Pavê</h3>
+                    <h4>Apenas Pavê</h4>
+                    <span>R$ 7,50</span>
                     <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
                 <div class="card3" onclick="dessert(this);">
-                    <img src="img/pudim 1.png" alt="">
+                    <img src="img/mousse.jpeg" alt="">
                     <h3>Pudim</h3>
-                    <h4>Apenas pudim</h4>
-                    <span>R$ 5,90</span>
+                    <h4>Apenas Mousse</h4>
+                    <span>R$ 4,50</span>
                     <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
                 <div class="card3" onclick="dessert(this);">
-                    <img src="img/pudim 1.png" alt="">
-                    <h3>Pudim</h3>
-                    <h4>Apenas pudim</h4>
-                    <span>R$ 5,90</span>
+                    <img src="img/torta.jpeg" alt="">
+                    <h3>Torta</h3>
+                    <h4>Apenas Torta</h4>
+                    <span>R$ 10,50</span>
                     <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
             </div>
         </div>
-        <div class="box-button" >
-            <button onclick="finalizar(this);"> Selecione os 3 itens <br>
+        <div class="box-button">
+            <button onclick="finalizar();"> Selecione os 3 itens <br>
                 para fechar o pedido</button>
         </div>
     </div>
-    <script>
-        let prato;
-        let bebida;
-        let sobremesa;
-        let valor = 0;
-        let priceFood = 0;
-        let priceDrink = 0;
-        let priceDessert = 0;
-
-        function food(elemento) {
-            const card = document.querySelector(".card1.card-border");
-            if (card !== null) {
-                card.classList.remove("card-border");
-            }
-            elemento.classList.add("card-border");
-        }
-        function drink(elemento) {
-            const cardDrink = document.querySelector(".card2.card-border");
-            if (cardDrink !== null) {
-                cardDrink.classList.remove("card-border");
-            }
-            elemento.classList.add("card-border");
-        }
-        function dessert(elemento) {
-            const cardDessert = document.querySelector(".card3.card-border");
-            if (cardDessert !== null) {
-                cardDessert.classList.remove("card-border");
-            }
-            elemento.classList.add("card-border");
-        }
-
-        function confirmarBotao() {
-            let cards = document.querySelectorAll(".card-border");
-
-            if (cards.length === 3) {
-                let botao = document.querySelector('button');
-                botao.classList.add("finish");
-                botao.innerHTML = "Finalizar Compra";
-                ConfirmZap();
-            }
-        }
-        function ConfirmZap(){
-            prato = document.querySelector(".card1.card-border h3").innerHTML;
-            bebida = document.querySelector(".card2.card-border h3").innerHTML;
-            sobremesa = document.querySelector(".card3.card-border h3").innerHTML;
-
-            priceFood = document.querySelector(".card1.card-border span").innerHTML;
-            priceDrink = document.querySelector(".card2.card-border span").innerHTML;
-            priceDessert = document.querySelector(".card3.card-border span").innerHTML;
-            
-            valor = Number(priceFood.slice(3,priceFood.length-1).replace(',','.')) + 
-            Number(priceDrink.slice(3,priceDrink.length-1).replace(',','.')) +
-            Number(priceDessert.slice(3,priceDessert.length-1).replace(',','.')) ;
-
-            valorTotal = valor.toFixed(2); 
-        }
-        function finalizar(elemento){
-            let finalizar = document.querySelector(".box-button .finish");
-            if(finalizar !== null){
-                alert(`Prato principal ${prato},sobremesa: - ${bebida}`);
-            }
-
-        }
-    </script>
+    <script src="script.js"></script>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 </body>
 
