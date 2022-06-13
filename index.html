@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,99 +9,178 @@
     <link rel="stylesheet" href="style/style.css">
     <title>DrivenEats</title>
 </head>
+
 <body>
     <div class="container">
         <div class="logo">
             <h1>DrivenEats</h1>
             <h2>Sua comida em 6 minutos</h2>
         </div>
-        <div class="content">
+        <div class="content" onclick="confirmarBotao();">
             <h2>Primeiro, seu prato</h2>
-            <div class="menu">
-                <div class="card">
+            <div class="menu-food">
+                <div class="card1" onclick="food(this);">
                     <img src="img/frango_yin_yang 1.png" alt="">
                     <h3>Frango Yin Yang</h3>
                     <h4>Um pouco de batata, um pouco de salada</h4>
                     <span>R$ 14,90</span>
+                    <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
-                <div class="card">
-                    <img src="img/frango_yin_yang 1.png" alt="">
-                    <h3>Frango Yin Yang</h3>
-                    <h4>Um pouco de batata, um pouco de salada</h4>
-                    <span>R$ 14,90</span>
+                <div class="card1" onclick="food(this);">
+                    <img src="img/bife ao molho de mostarda.jpeg" alt="">
+                    <h3>Bife ao Molho</h3>
+                    <h4>Bide com molho mostarda e purê</h4>
+                    <span>R$ 18,50</span>
+                    <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
-                <div class="card">
-                    <img src="img/frango_yin_yang 1.png" alt="">
-                    <h3>Frango Yin Yang</h3>
-                    <h4>Um pouco de batata, um pouco de salada</h4>
-                    <span>R$ 14,90</span>
+                <div class="card1" onclick="food(this);">
+                    <img src="img/macarronada.jpeg" alt="">
+                    <h3>Macarronada Italiana</h3>
+                    <h4>Massa fresca com molho de tomate</h4>
+                    <span>R$ 20,00</span>
+                    <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
-                <div class="card">
-                    <img src="img/frango_yin_yang 1.png" alt="">
-                    <h3>Frango Yin Yang</h3>
-                    <h4>Um pouco de batata, um pouco de salada</h4>
-                    <span>R$ 14,90</span>
+                <div class="card1" onclick="food(this);">
+                    <img src="img/rizoto.jpeg" alt="">
+                    <h3>Risoto com Filé Mignon</h3>
+                    <h4>Arroz com camarão e carne</h4>
+                    <span>R$ 35,90</span>
+                    <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
             </div>
             <h2>Agora, sua bebida</h2>
-            <div class="menu">
-                <div class="card">
+            <div class="menu-drink">
+                <div class="card2" onclick="drink(this);">
                     <img src="img/coquinha_gelada 1.png" alt="">
                     <h3>Coquinha gelada</h3>
                     <h4>Lata 350ml</h4>
                     <span>R$ 4,90</span>
+                    <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
-                <div class="card">
+                <div class="card2" onclick="drink(this);">
                     <img src="img/coquinha_gelada 1.png" alt="">
                     <h3>Coquinha gelada</h3>
                     <h4>Lata 350ml</h4>
                     <span>R$ 4,90</span>
+                    <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
-                <div class="card">
+                <div class="card2" onclick="drink(this);">
                     <img src="img/coquinha_gelada 1.png" alt="">
                     <h3>Coquinha gelada</h3>
                     <h4>Lata 350ml</h4>
                     <span>R$ 4,90</span>
+                    <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
-                <div class="card">
+                <div class="card2" onclick="drink(this);">
                     <img src="img/coquinha_gelada 1.png" alt="">
                     <h3>Coquinha gelada</h3>
                     <h4>Lata 350ml</h4>
                     <span>R$ 4,90</span>
+                    <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
             </div>
             <h2>Por fim, sua sobremesa</h2>
-            <div class="menu">
-                <div class="card">
+            <div class="menu-dessert">
+                <div class="card3" onclick="dessert(this);">
                     <img src="img/pudim 1.png" alt="">
                     <h3>Pudim</h3>
                     <h4>Apenas pudim</h4>
                     <span>R$ 5,90</span>
+                    <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
-                <div class="card">
+                <div class="card3" onclick="dessert(this);">
                     <img src="img/pudim 1.png" alt="">
                     <h3>Pudim</h3>
                     <h4>Apenas pudim</h4>
                     <span>R$ 5,90</span>
+                    <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
-                <div class="card">
+                <div class="card3" onclick="dessert(this);">
                     <img src="img/pudim 1.png" alt="">
                     <h3>Pudim</h3>
                     <h4>Apenas pudim</h4>
                     <span>R$ 5,90</span>
+                    <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
-                <div class="card">
+                <div class="card3" onclick="dessert(this);">
                     <img src="img/pudim 1.png" alt="">
                     <h3>Pudim</h3>
                     <h4>Apenas pudim</h4>
                     <span>R$ 5,90</span>
+                    <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
             </div>
         </div>
-        <div class="box-button">
-            <button class="button">Selecione os 3 itens
+        <div class="box-button" >
+            <button onclick="finalizar(this);"> Selecione os 3 itens <br>
                 para fechar o pedido</button>
         </div>
     </div>
+    <script>
+        let prato;
+        let bebida;
+        let sobremesa;
+        let valor = 0;
+        let priceFood = 0;
+        let priceDrink = 0;
+        let priceDessert = 0;
+
+        function food(elemento) {
+            const card = document.querySelector(".card1.card-border");
+            if (card !== null) {
+                card.classList.remove("card-border");
+            }
+            elemento.classList.add("card-border");
+        }
+        function drink(elemento) {
+            const cardDrink = document.querySelector(".card2.card-border");
+            if (cardDrink !== null) {
+                cardDrink.classList.remove("card-border");
+            }
+            elemento.classList.add("card-border");
+        }
+        function dessert(elemento) {
+            const cardDessert = document.querySelector(".card3.card-border");
+            if (cardDessert !== null) {
+                cardDessert.classList.remove("card-border");
+            }
+            elemento.classList.add("card-border");
+        }
+
+        function confirmarBotao() {
+            let cards = document.querySelectorAll(".card-border");
+
+            if (cards.length === 3) {
+                let botao = document.querySelector('button');
+                botao.classList.add("finish");
+                botao.innerHTML = "Finalizar Compra";
+                ConfirmZap();
+            }
+        }
+        function ConfirmZap(){
+            prato = document.querySelector(".card1.card-border h3").innerHTML;
+            bebida = document.querySelector(".card2.card-border h3").innerHTML;
+            sobremesa = document.querySelector(".card3.card-border h3").innerHTML;
+
+            priceFood = document.querySelector(".card1.card-border span").innerHTML;
+            priceDrink = document.querySelector(".card2.card-border span").innerHTML;
+            priceDessert = document.querySelector(".card3.card-border span").innerHTML;
+            
+            valor = Number(priceFood.slice(3,priceFood.length-1).replace(',','.')) + 
+            Number(priceDrink.slice(3,priceDrink.length-1).replace(',','.')) +
+            Number(priceDessert.slice(3,priceDessert.length-1).replace(',','.')) ;
+
+            valorTotal = valor.toFixed(2); 
+        }
+        function finalizar(elemento){
+            let finalizar = document.querySelector(".box-button .finish");
+            if(finalizar !== null){
+                alert(`Prato principal ${prato},sobremesa: - ${bebida}`);
+            }
+
+        }
+    </script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 </body>
+
 </html>
